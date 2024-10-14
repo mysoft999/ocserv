@@ -3,7 +3,9 @@
 > * 因为centos 7 官方源停止维护，请使用下面的脚本文件进行安装更换源操作
 > * bash -c "$(curl -fsSL https://mirror.moack.co.kr/.resource/centos7-change-vault.sh)"
 > * 第一步：安装ocserv 服务器，请使用下面的脚本文件进行安装
-> * sudo -i 
+
+
+sudo -i 
 
 yum install wget -y 
 
@@ -13,7 +15,8 @@ chmod +x install_script.sh
 
 ./install_script.sh
 > * 第二步：（可以不安装）但如果想使用 Radius 来管理 ocserv 服务器中的账号，即OCSERV对接Radius，请使用这一步，注意，必须安装第一步，才能安装第二步
-> * wget https://raw.githubusercontent.com/mysoft999/ocserv/master/radius_for_ocserv.sh
+
+wget https://raw.githubusercontent.com/mysoft999/ocserv/master/radius_for_ocserv.sh
 
 chmod +x radius_for_ocserv.sh
 
