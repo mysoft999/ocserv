@@ -4,14 +4,20 @@
 > * bash -c "$(curl -fsSL https://mirror.moack.co.kr/.resource/centos7-change-vault.sh)"
 > * 第一步：安装ocserv 服务器，请使用下面的脚本文件进行安装
 > * sudo -i 
-> *yum install wget -y 
-> * https://raw.githubusercontent.com/mysoft999/ocserv/master/install_script.sh 
-> *chmod +x install_script.sh 
-> *./install_script.sh
+
+yum install wget -y 
+
+https://raw.githubusercontent.com/mysoft999/ocserv/master/install_script.sh 
+
+chmod +x install_script.sh 
+
+./install_script.sh
 > * 第二步：（可以不安装）但如果想使用 Radius 来管理 ocserv 服务器中的账号，即OCSERV对接Radius，请使用这一步，注意，必须安装第一步，才能安装第二步
 > * wget https://raw.githubusercontent.com/mysoft999/ocserv/master/radius_for_ocserv.sh
-> * chmod +x radius_for_ocserv.sh
-> *./radius_for_ocserv.sh
+
+chmod +x radius_for_ocserv.sh
+
+./radius_for_ocserv.sh
 #
 ## 服务器操作常用方法 ##
 > * 启动服务器方法: systemctl start ocserv
