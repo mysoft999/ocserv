@@ -12,10 +12,8 @@ chmod +x install_script.sh
 ./install_script.sh
 > * 第二步：（可以不安装）但如果想使用 Radius 来管理 ocserv 服务器中的账号，即OCSERV对接Radius，请使用这一步，注意，必须安装第一步，才能安装第二步
 
-wget https://raw.githubusercontent.com/mysoft999/ocserv/master/radius_for_ocserv.sh
-
-chmod +x radius_for_ocserv.sh
-
+wget https://raw.githubusercontent.com/mysoft999/ocserv/master/radius_for_ocserv.sh  
+chmod +x radius_for_ocserv.sh  
 ./radius_for_ocserv.sh
 #
 ## 服务器操作常用方法 ##
